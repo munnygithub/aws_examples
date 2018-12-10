@@ -9,9 +9,7 @@ public class HelloLambdaFunctionHandler implements RequestHandler<Object, String
 	public String handleRequest(Object input, Context context) {
 		context.getLogger().log("Input: " + input);
 		String output = "Hello from RequestHandler, " + input + "!";
-		return output;
-		
-		
+		return output;	
 	}
 
 }

@@ -132,5 +132,10 @@ public class TestContext implements Context {
         public void log(String message) {
             System.err.println(message);
         }
+
+		@Override
+		public void log(byte[] message) {
+            System.err.println(message);
+		}
     }
 }

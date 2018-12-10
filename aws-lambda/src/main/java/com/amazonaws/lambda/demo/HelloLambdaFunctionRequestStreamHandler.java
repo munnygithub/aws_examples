@@ -12,7 +12,6 @@ public class HelloLambdaFunctionRequestStreamHandler implements RequestStreamHan
 
 	@Override
 	public void handleRequest(InputStream inputStream, OutputStream outputStream, Context context) throws IOException {
-
 		String input = IOUtils.toString(inputStream);
 		outputStream.write(("Hello World from RequestStreamHandler - " + input).getBytes());
 	}
